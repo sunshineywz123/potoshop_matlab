@@ -1,0 +1,11 @@
+I=imread('tupian.jpg');
+i=imresize(I,[640,1137]);
+subplot(1,3,1)
+imshow(i);
+P=imread('p.jpg');
+p=imresize(P,[640,1137]);
+subplot(1,3,2)
+imshow(p);
+K=imadd(i,p,'uint8');
+subplot(1,3,3)
+imshow(K,[]);
